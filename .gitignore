@@ -1,0 +1,40 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+
+# Environment
+.env
+.venv/
+env/
+venv/
+
+# Jupyter / IPython
+.ipynb_checkpoints
+
+# Logs / local files
+*.log
+*.sqlite3
+*.db
+
+# System / editor configs
+.DS_Store
+.vscode/
+.idea/
+
+# Streamlit & FastAPI cache
+*.pyc
+*.pyo
+*.pyd
+.mypy_cache/
+.pytest_cache/
+
+embeddings
+data
+# FAISS index & runtime data
+embeddings/
+data/
+outputs/
+*.faiss
+*.pkl
+*.json
