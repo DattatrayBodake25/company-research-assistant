@@ -1,18 +1,16 @@
-from fastapi import FastAPI, Query
+from fastapi import FastAPI, Query, Body
 from fastapi.middleware.cors import CORSMiddleware
-from backend.services.query_generator import generate_query_list
-from backend.services.search_engine import search_web
 from pydantic import BaseModel
-from backend.services.bulk_search import bulk_search_questions
-from backend.services.parser import load_search_results
-from backend.services.rag_pipeline import build_faiss_index
-
-from backend.services.report_generator import create_report_from_json
 from typing import List
 
-from backend.services.rag_qa import answer_with_rag
-from fastapi import Body
-from fastapi import FastAPI
+from services.query_generator import generate_query_list
+from services.search_engine import search_web
+from services.bulk_search import bulk_search_questions
+from services.parser import load_search_results
+from services.rag_pipeline import build_faiss_index
+from services.report_generator import create_report_from_json
+from services.rag_qa import answer_with_rag
+
 
 app = FastAPI()
 
